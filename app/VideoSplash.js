@@ -66,7 +66,7 @@ const VideoSplash = ({ children }) => {
 
           {/* caption */}
           <p className="relative z-10 mt-5 sm:mt-6 text-[11px] sm:text-xs uppercase tracking-[0.4em] text-white/55">
-            A glimpse of what's coming
+            A glimpse of what&apos;s coming
           </p>
 
           <button

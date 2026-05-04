@@ -1,0 +1,5 @@
+# Countdown configuration
+# target: ISO 8601 datetime in your local timezone (YYYY-MM-DDTHH:mm:ss)
+# Lines starting with # are ignored.
+
+target=2026-05-15T00:00:00

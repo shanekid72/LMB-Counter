@@ -1,0 +1,31 @@
+html:has(.main-content-1) {
+  --primary: #00389a;
+  --primary-shade: #367df4;
+
+  color: white;
+  background-color: var(--primary);
+  background-image: conic-gradient(from var(--angle), var(--primary-shade), var(--primary), var(--primary-shade));
+  animation: 60s animateBG steps(60) infinite;
+}
+
+@keyframes animateBG {
+  to { --angle: 360deg; }
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 60s linear infinite reverse;
+}
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.hero-timer {
+  font-feature-settings: "tnum", "ss01";
+  font-variant-numeric: tabular-nums;
+}

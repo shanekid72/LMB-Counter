@@ -114,7 +114,7 @@ const Demo3 = () => {
 
           <div className="order-1 sm:order-2 sm:w-1/3 text-center">
             <Link className="inline-flex items-center justify-center transition-all duration-300 hover:opacity-60" href="/" aria-label="Lulu Money Business">
-              <img src="/logo.png" alt="Lulu Money Business" className="h-7 sm:h-9 w-auto" />
+              <img src="/logo.png" alt="Lulu Money Business" className="h-12 sm:h-16 w-auto" />
             </Link>
           </div>
 

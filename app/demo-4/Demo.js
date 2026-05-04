@@ -24,7 +24,7 @@ const Demo4 = () => {
     <main className={`main-content-4 ${bricolageGrotesque.className} min-h-screen flex flex-col items-center justify-center overflow-hidden py-16 px-3`}>
       <header className="mb-auto md:mb-0">
         <Link href="/" aria-label="Lulu Money Business" className="mb-16 inline-flex items-center justify-center">
-          <img src="/logo.png" alt="Lulu Money Business" className="h-9 sm:h-11 w-auto" />
+          <img src="/logo.png" alt="Lulu Money Business" className="h-14 sm:h-20 w-auto" />
         </Link>
       </header>
 

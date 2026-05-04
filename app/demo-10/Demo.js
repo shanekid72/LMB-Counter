@@ -87,7 +87,7 @@ const Demo10 = () => {
               aria-label="Lulu Money Business"
               className="transition-all duration-300 hover:opacity-60 mb-4 inline-flex items-center justify-center"
             >
-              <img src="/logo.png" alt="Lulu Money Business" className="h-10 sm:h-12 w-auto" />
+              <img src="/logo.png" alt="Lulu Money Business" className="h-16 sm:h-20 w-auto" />
             </Link>
             <p className="text-5xl sm:text-6xl leading-[1.1] uppercase text-[#0a2756]">
               Coming Soon

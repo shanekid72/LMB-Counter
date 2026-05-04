@@ -29,7 +29,7 @@ const TimerRow = () => {
       {cells.map((c) => (
         <div
           key={c.l}
-          className="flex flex-col items-center min-w-[58px] sm:min-w-[72px] rounded-2xl border border-[#1cb1e8]/40 bg-white px-3 py-2 shadow-sm"
+          <div className="flex flex-col items-center min-w-[58px] sm:min-w-[72px] rounded-2xl border border-[#1cb1e8]/40 bg-white px-3 py-2 shadow-sm"
         >
           <span className="text-2xl sm:text-3xl tabular-nums leading-none text-[#0a2756]">{pad(c.v)}</span>
           <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-[#0a2756]/60 mt-1">{c.l}</span>

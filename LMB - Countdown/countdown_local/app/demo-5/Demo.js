@@ -101,7 +101,9 @@ const Demo5 = () => {
         <div className="container mx-auto">
           <div className="flex flex-wrap md:justify-between items-center">
             <div className="md:w-1/3">
-              <Link className="font-bold text-2xl" href="/" aria-label="Logo">Lulu Money Business</Link>
+              <Link className="inline-flex items-center" href="/" aria-label="Lulu Money Business">
+                <img src="/logo.png" alt="Lulu Money Business" className="h-8 sm:h-10 w-auto" />
+              </Link>
             </div>
             <div className={`${menuOpen ? "flex bg-white rounded-lg" : "hidden md:flex"} order-last md:order-none w-full mt-2 md:mt-0 py-6 md:py-0 flex flex-col md:flex-row md:w-1/3 text-center gap-4 md:gap-12 justify-center items-center transition-all duration-300`}>
               <Link href="#" className="cursor-pointer relative after:absolute after:content-[''] after:w-0 after:h-[1px] after:bg-black after:transition-all after:duration-300 hover:after:w-full after:right-0 hover:after:right-auto hover:after:left-0 after:bottom-0 after:pointer-events-none">Services</Link>
@@ -132,9 +134,9 @@ const Demo5 = () => {
           transition={{ type: "spring", visualDuration: 0.4, bounce: 0.3, delay: 0.05 }}
         >
           <div className="text-4xl md:text-6xl leading-[1.2] mb-4 md:mb-6">
-            <p>Lulu Money Business</p>
+            <p className="text-[#0a2756]">Lulu Money Business</p>
             <p>
-              <span className={`!italic uppercase text-3xl md:text-5xl ${bodoniModa.className}`}>Launching</span> SOON
+              <span className={`!italic uppercase text-3xl md:text-5xl text-[#1cb1e8] ${bodoniModa.className}`}>Launching</span> <span className="text-[#0a2756]">SOON</span>
             </p>
           </div>
 

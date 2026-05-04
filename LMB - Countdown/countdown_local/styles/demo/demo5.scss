@@ -1,6 +1,7 @@
 html:has(.main-content-5) {
-  --bg: #f4efe9;
-  --primary: #367df4;
+  --bg: #f5f8fc;
+  --primary: #1cb1e8;
+  --primary-deep: #0a2756;
 
 	background-color: var(--bg);
 	background-image: url(../../public/noise.png);
@@ -8,14 +9,9 @@ html:has(.main-content-5) {
 	animation: noise 1s infinite linear alternate;
 }
 
-// animate noice background
 @keyframes noise {
-	0% {
-		background-position: 0 0;
-	}
-	100% {
-		background-position: 100% 100%;
-	}
+	0% { background-position: 0 0; }
+	100% { background-position: 100% 100%; }
 }
 
 .no-transform-mobile > div {

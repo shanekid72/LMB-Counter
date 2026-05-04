@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <clipPath id="halfCircle">
+      <path d="M100 18 a82 82 0 0 1 0 164 L100 100 Z M18 100 a82 82 0 0 1 164 0 L100 100 Z"></path>
+    </clipPath>
+  </defs>
+  
+  <path d="M28 100 A72 72 0 0 1 172 100" stroke="#1cb1e8" stroke-width="14" stroke-linecap="round"></path>
+  
+  <path d="M28 116 H172" stroke="#1cb1e8" stroke-width="14" stroke-linecap="round"></path>
+  
+  <g fill="#1cb1e8">
+    <path d="M96 110 L40 36 L60 30 L104 108 Z"></path>
+    <path d="M96 110 L72 22 L92 20 L104 108 Z"></path>
+    <path d="M100 110 L120 22 L140 30 L108 110 Z"></path>
+    <path d="M104 108 L160 50 L172 68 L112 112 Z"></path>
+  </g>
+</svg>

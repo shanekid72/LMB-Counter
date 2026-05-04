@@ -30,7 +30,7 @@ const Demo1 = () => {
   return (
     <main className={`${facultyGlyphic.className} main-content-1 min-h-screen flex flex-col relative overflow-hidden`}>
       <header className="relative z-20 flex justify-center pt-8 sm:pt-10">
-        <img src="/logo-light.png" alt="Lulu Money Business" className="h-7 sm:h-9 w-auto opacity-95" />
+        <img src="/logo-light.png" alt="Lulu Money Business" className="h-12 sm:h-16 w-auto opacity-95" />
       </header>
 
       <div

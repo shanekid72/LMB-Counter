@@ -60,7 +60,7 @@ const Demo1 = () => {
                 d="M230,380 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
               />
             </defs>
-            <text className="text-[2.1rem] uppercase tracking-[0.3em]">
+            <text className="text-[2.1rem] uppercase">
               <textPath fill="currentColor" href="#circle-button-text">
                 Launching Soon — Launching Soon —
               </textPath>

@@ -30,7 +30,7 @@ const Demo1 = () => {
   return (
     <main className={`${facultyGlyphic.className} main-content-1 min-h-screen flex flex-col relative overflow-hidden`}>
       <header className="relative z-20 flex justify-center pt-8 sm:pt-10">
-        <img src="/logo-light.png" alt="Lulu Money Business" className="h-12 sm:h-16 w-auto opacity-95" />
+        <img src="/logo-light.png" alt="Lulu Money Business" className="h-20 sm:h-28 w-auto opacity-95" />
       </header>
 
       <div
@@ -89,15 +89,6 @@ const Demo1 = () => {
           </filter>
         </svg>
 
-        <motion.p
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.25 }}
-          className="text-xl sm:text-3xl tracking-[0.4em] uppercase text-white/85 font-medium"
-        >
-          Launching in {String(days).padStart(2, "0")} Days
-        </motion.p>
-
         <NumberFlowGroup>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -105,22 +96,25 @@ const Demo1 = () => {
             transition={{ duration: 0.6, delay: 0.35, ease: "easeOut" }}
             className="hero-timer grid items-baseline justify-center gap-x-3 sm:gap-x-6 gap-y-4 sm:gap-y-6 leading-none"
             style={{
-              gridTemplateColumns: "repeat(7, auto)",
+              gridTemplateColumns: "repeat(9, auto)",
               "--number-flow-char-height": "1em",
             }}
           >
-            <NumberFlow value={hh} format={{ minimumIntegerDigits: 2 }} trend={-1} className={`${DIGIT_BIG} col-start-1 row-start-1 justify-self-center`} />
+            <NumberFlow value={days} format={{ minimumIntegerDigits: 2 }} trend={-1} className={`${DIGIT_BIG} col-start-1 row-start-1 justify-self-center`} />
             <span className={`${SEP_BIG} col-start-2 row-start-1`}>:</span>
-            <NumberFlow value={mm} format={{ minimumIntegerDigits: 2 }} trend={-1} className={`${DIGIT_BIG} col-start-3 row-start-1 justify-self-center`} />
+            <NumberFlow value={hh} format={{ minimumIntegerDigits: 2 }} trend={-1} className={`${DIGIT_BIG} col-start-3 row-start-1 justify-self-center`} />
             <span className={`${SEP_BIG} col-start-4 row-start-1`}>:</span>
-            <NumberFlow value={ss} format={{ minimumIntegerDigits: 2 }} trend={-1} className={`${DIGIT_BIG} col-start-5 row-start-1 justify-self-center`} />
-            <span className={`${SEP_SMALL} col-start-6 row-start-1`}>.</span>
-            <span className={`${DIGIT_SMALL} col-start-7 row-start-1 justify-self-center`}>{String(ms).padStart(3, "0")}</span>
+            <NumberFlow value={mm} format={{ minimumIntegerDigits: 2 }} trend={-1} className={`${DIGIT_BIG} col-start-5 row-start-1 justify-self-center`} />
+            <span className={`${SEP_BIG} col-start-6 row-start-1`}>:</span>
+            <NumberFlow value={ss} format={{ minimumIntegerDigits: 2 }} trend={-1} className={`${DIGIT_BIG} col-start-7 row-start-1 justify-self-center`} />
+            <span className={`${SEP_SMALL} col-start-8 row-start-1`}>.</span>
+            <span className={`${DIGIT_SMALL} col-start-9 row-start-1 justify-self-center`}>{String(ms).padStart(3, "0")}</span>
 
-            <span className={`${LABEL} col-start-1 row-start-2`}>Hours</span>
-            <span className={`${LABEL} col-start-3 row-start-2`}>Minutes</span>
-            <span className={`${LABEL} col-start-5 row-start-2`}>Seconds</span>
-            <span className={`${LABEL} col-start-7 row-start-2`}>Ms</span>
+            <span className={`${LABEL} col-start-1 row-start-2`}>Days</span>
+            <span className={`${LABEL} col-start-3 row-start-2`}>Hours</span>
+            <span className={`${LABEL} col-start-5 row-start-2`}>Minutes</span>
+            <span className={`${LABEL} col-start-7 row-start-2`}>Seconds</span>
+            <span className={`${LABEL} col-start-9 row-start-2`}>Ms</span>
           </motion.div>
         </NumberFlowGroup>
       </section>

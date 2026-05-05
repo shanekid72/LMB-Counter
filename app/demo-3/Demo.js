@@ -107,46 +107,18 @@ const Demo3 = () => {
         transition={{ duration: 0.3, delay: 0.3 }}
         className="pt-6 px-5 sm:px-8 text-sm max-w-full w-[1200px] mx-auto"
       >
-        <div className="flex gap-2 lg:gap-16 justify-between items-center">
-          <div className="order-2 sm:order-1 sm:w-1/3 ms-auto sm:ms-0 me-3 sm:me-0">
-            <button className="uppercase relative after:absolute after:content-[''] after:w-0 after:h-[1px] after:bg-black after:transition-all after:duration-300 hover:after:w-full after:right-0 hover:after:right-auto hover:after:left-0 after:bottom-0 opacity-100 sm:opacity-75 hover:opacity-100 transition-all duration-300 cursor-pointer" aria-label="About" onClick={handleAboutButton}>About</button>
-          </div>
-
-          <div className="order-1 sm:order-2 sm:w-1/3 text-center">
-            <Link className="inline-flex items-center justify-center transition-all duration-300 hover:opacity-60" href="/" aria-label="Lulu Money Business">
-              <img src="/logo.png" alt="Lulu Money Business" className="h-12 sm:h-16 w-auto" />
-            </Link>
-          </div>
-
-          <div className="order-3 sm:w-1/3 text-end">
-            <a className="uppercase relative after:absolute after:content-[''] after:w-0 after:h-[1px] after:bg-black after:transition-all after:duration-300 hover:after:w-full after:right-0 hover:after:right-auto hover:after:left-0 after:bottom-0 opacity-100 sm:opacity-75 hover:opacity-100 transition-all duration-300" href="#subscribe" aria-label="Subscribe" onClick={handleSubscribeButton}>Subscribe</a>
-          </div>
+        <div className="flex justify-center items-center">
+          <Link className="inline-flex items-center justify-center transition-all duration-300 hover:opacity-60" href="/" aria-label="Lulu Money Business">
+            <img src="/logo.png" alt="Lulu Money Business" className="h-12 sm:h-16 w-auto" />
+          </Link>
         </div>
       </motion.header>
 
       <section
-        className="pt-[15dvh] px-3 sm:px-8 flex-1 transition-all duration-200"
+        className="pt-4 sm:pt-6 px-3 sm:px-8 flex-1 transition-all duration-200"
         style={about ? { transform: "scale(1) translateY(20%)" } : {}}
       >
         <section className="text-center mb-8 w-fit mx-auto no-transform-mobile" ref={textContainerRef}>
-          <motion.div
-            initial={{ opacity: 0, translateY: 20 }}
-            animate={{ opacity: 1, translateY: 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <TextCursorProximity
-              label="Hey, Welcome!"
-              className="text-sm sm:text-base mb-2 sm:mb-4"
-              styles={{
-                transform: { from: "translateY(0) scale(1) rotate(0deg)", to: "translateY(-10px) scale(1.2) rotate(10deg)" },
-                color: { from: "#333333", to: "#1cb1e8" },
-              }}
-              falloff="gaussian"
-              radius={100}
-              containerRef={textContainerRef}
-            />
-          </motion.div>
-
           <motion.div
             initial={{ opacity: 0, translateY: 20 }}
             animate={{ opacity: 1, translateY: 0 }}
@@ -170,17 +142,34 @@ const Demo3 = () => {
             animate={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.3, delay: 0.2 }}
           >
-            <TextCursorProximity
-              label="Coming Soon"
-              className={`text-[clamp(2.5rem,8vw,8rem)] uppercase font-bold leading-none tracking-tight`}
-              styles={{
-                transform: { from: "translateY(0) scaleX(1)", to: "translateY(-20px) scaleX(1.3)" },
-                color: { from: "#0a2756", to: "#1cb1e8" },
+            <motion.div
+              animate={{
+                scale: [1, 1.035, 1],
+                filter: [
+                  "drop-shadow(0 0 0px rgba(28,177,232,0))",
+                  "drop-shadow(0 0 28px rgba(28,177,232,0.55))",
+                  "drop-shadow(0 0 0px rgba(28,177,232,0))",
+                ],
               }}
-              falloff="gaussian"
-              radius={100}
-              containerRef={textContainerRef}
-            />
+              transition={{
+                duration: 3.4,
+                ease: "easeInOut",
+                repeat: Infinity,
+              }}
+              style={{ willChange: "transform, filter" }}
+            >
+              <TextCursorProximity
+                label="Coming Soon"
+                className={`text-[clamp(2.5rem,8vw,8rem)] uppercase font-bold leading-none tracking-tight`}
+                styles={{
+                  transform: { from: "translateY(0) scaleX(1)", to: "translateY(-20px) scaleX(1.3)" },
+                  color: { from: "#0a2756", to: "#1cb1e8" },
+                }}
+                falloff="gaussian"
+                radius={100}
+                containerRef={textContainerRef}
+              />
+            </motion.div>
           </motion.div>
         </section>
 

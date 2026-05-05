@@ -62,7 +62,7 @@ const Demo1 = () => {
             </defs>
             <text className="text-[2.1rem] uppercase tracking-[0.3em]">
               <textPath fill="currentColor" href="#circle-button-text">
-                Launching Soon  •  Launching Soon  •
+                Launching Soon — Launching Soon —
               </textPath>
             </text>
           </svg>
